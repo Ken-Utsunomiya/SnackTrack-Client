@@ -1,0 +1,80 @@
+@value colors: './Colors.module.css';
+@value LIGHT_GREY, INNER_LIGHT_GREY, MID_GREY, DARK_GREY, BASE_BLUE, DARK_BLUE, WHITE, RED from colors;
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 0 1rem;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  vertical-align: middle;
+  line-height: 1.5rem;
+  font-weight: 500;
+}
+
+.header__text {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.label {
+  font-size: 1rem;
+  margin: 1rem;
+}
+
+.input__container {
+  width: 100%;
+  min-height: 72px;
+  padding: 0 1rem;
+}
+
+.input__base {
+  color: DARK_GREY;
+  font-size: 1rem;
+  border: 1.5px solid LIGHT_GREY;
+  background-color: WHITE;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0rem;
+  width: 100%;
+}
+
+.input__focused {
+  background-color: WHITE;
+  border: 2px solid BASE_BLUE
+}
+
+.button__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0.75rem;
+}
+
+.error__message {
+  color: RED;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0.4rem 0;
+  text-align: left;
+}
+
+.character__count {
+  color: DARK_GREY;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0.4rem 0;
+  text-align: right;
+}
+
+.input__validation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.input__error {
+  border: 2px solid RED;
+}

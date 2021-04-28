@@ -1,0 +1,44 @@
+@value colors: './Colors.module.css';
+@value BASE_RED, LIGHT_GREY, WHITE from colors;
+
+.bottomNav__base {
+    height: 60px;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    position: fixed;
+    background-color: WHITE;
+    border-top: 1px solid LIGHT_GREY;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1100;
+}
+
+.icon__base {
+    width: 2rem;
+    height: 2rem;
+    opacity: 30%;
+    transition: 0.2s;
+}
+  
+.icon__base:hover {
+    font-weight: bold;
+    opacity: 100%;
+    fill: BASE_RED;
+}
+
+.icon__active {
+    font-weight: bold;
+    opacity: 100%;
+    fill: BASE_RED;
+}
+
+@media (min-width: 426px) {
+    .bottomNav__base {
+        display: none;
+    }
+}

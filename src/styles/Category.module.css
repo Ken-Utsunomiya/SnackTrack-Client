@@ -1,0 +1,118 @@
+@value colors: './Colors.module.css';
+@value DARK_GREY, BASE_BLUE, BASE_RED from colors;
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+.categoryBox {
+	width: 80px;
+	text-align: center;
+	margin-right: 0.8rem;
+	display: flex;
+	align-items: flex-end;
+}
+
+.categoryText {
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: DARK_GREY;
+	margin: 0.75rem 0 0.25rem 0;
+}
+
+.selectedText {
+	color: BASE_RED;
+}
+
+.img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.img:hover {
+	background-color: #a7e6f2;
+	font-weight: bold;
+}
+
+.img:active {
+	background-color: #a7e6f2;
+	font-weight: bold;
+}
+
+.imgToggle {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background-color: #a7e6f2;
+	font-weight: bold;
+}
+
+.button {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+}
+
+.button:hover {
+	font-weight: bold;
+}
+
+.button:active {
+	font-weight: bold;
+}
+
+.buttonToggle {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: none;
+	cursor: pointer;
+	overflow: hidden;
+	outline: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-right: 0.25rem;
+}
+
+.buttonToggle__lastChild {
+	padding-right: 1.5rem;
+}
+
+.icon_button {
+	width: 60px;
+}
+
+.filter_hover {
+	transform: translateY(-2px);
+}
+
+.unselectable {
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@media (max-width: 425px) {
+	.container {
+		overflow-x: scroll;
+		overflow-y: hidden;
+		white-space: nowrap;
+		margin: 0 -1rem;
+		padding: 0 1rem 1rem 1rem;
+	}
+
+	.filter_hover {
+		transform: none;
+	}
+
+	.button:hover {
+		font-weight: 500;
+	}
+}

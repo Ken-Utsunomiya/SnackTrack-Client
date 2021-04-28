@@ -1,0 +1,73 @@
+@value colors: './Colors.module.css';
+@value LIGHT_GREY, WHITE, BASE_BLUE, DARK_BLUE, LIGHT_BLUE, LIGHT_BLUE_HOVER from colors;
+
+@value effects: './Effects.module.css';
+@value DEFAULT_SHADOW from effects;
+
+.card__base {
+  border-radius: 12px;
+  width: 100%;
+  height: fit-content;
+  padding: 0 1rem;
+  margin-right: 1rem;
+  box-shadow: DEFAULT_SHADOW;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.bean__container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1rem;
+}
+
+.bean {
+  background-color: LIGHT_BLUE;
+  color: BASE_BLUE;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  padding: 5px 12px;
+  border-radius: 24px;
+  line-height: 1;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 0.1s;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bean:hover {
+  background-color: LIGHT_BLUE_HOVER;
+  color: DARK_BLUE;
+}
+
+.bean__active {
+  background-color: BASE_BLUE;
+  color: WHITE;
+}
+
+.bean__active:hover {
+  background-color: BASE_BLUE;
+  color: WHITE;
+}
+
+@media (max-width: 960px) {
+  .card__base {
+    margin-bottom: 1rem;
+  }
+}

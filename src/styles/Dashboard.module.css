@@ -1,0 +1,162 @@
+@value colors: './Colors.module.css';
+@value RED, ORANGE, LIGHT_GREY, WHITE, DARK_GREY, BASE_BLUE, DARK_BLUE, INNER_LIGHT_GREY, MID_GREY from colors;
+
+@value effects: './Effects.module.css';
+@value DARK_SHADOW, DEFAULT_LIFT, DEFAULT_SHADOW from effects;
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 0 1rem 0;
+  min-height: 45px;
+}
+
+.greeting {
+  color: BASE_BLUE;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.tile__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tile {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  color: LIGHT_GREY;
+  padding: 0 1rem;
+  align-items: center;
+  border-radius: 12px;
+  background-color:WHITE;
+  box-shadow: DEFAULT_SHADOW;
+}
+
+.tile__mid {
+  margin: 0 1rem;
+}
+
+.tile > h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: DARK_BLUE;
+  padding-right: 0.6rem;
+}
+
+.tile .out__tile {
+  color: RED;
+}
+
+.tile .low__tile {
+  color: ORANGE;
+}
+
+.tile .stale__tile {
+  color: MID_GREY;
+}
+
+.tile > p {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: DARK_GREY;
+  text-align: left;
+  line-height: 1rem;
+}
+
+.elements__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.section__one {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+}
+
+.placeholder {
+  width: 100%;
+  background-color: INNER_LIGHT_GREY;
+  color: MID_GREY;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 1rem;
+  text-align: center;
+  margin: 0 0 1rem;
+}
+
+@media (max-width: 960px) {
+  .section__one {
+    flex-direction: column;
+    margin-right: 1rem;
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+
+  .tile__container {
+    margin-top: 1rem;
+  }
+
+  .elements__container {
+    flex-direction: column;
+  }
+
+  .section__one {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .tile {
+    padding: 0 0.5rem;
+  }
+
+  .tile > h5 {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .tile > p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .tile__container {
+    flex-direction: column;
+  }
+
+  .tile__mid {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .tile > h5 {
+    font-size: 1.8rem;
+    padding-right: 0.6rem;
+  }
+
+  .tile > p {
+    font-size: 0.9rem;
+  }
+
+  .tile {
+    margin-top: 1rem;
+    width: 100%;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+}

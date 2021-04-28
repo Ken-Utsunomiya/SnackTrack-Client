@@ -1,0 +1,234 @@
+@value colors: './Colors.module.css';
+@value BASE_BLUE, BASE_RED, DARK_BLUE, LIGHT_BLUE, LIGHT_GREY, DARK_GREY, WHITE from colors;
+
+@value effects: './Effects.module.css';
+@value DARK_SHADOW from effects;
+
+.page__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.list__container {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.balance {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.balance__noHover {
+  margin-left: auto;
+}
+
+.balance__text {
+  color: DARK_GREY;
+  font-weight: 600;
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.balance__value {
+  font-size: 24px;
+  font-weight: bold;
+  color: DARK_BLUE;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.balance__value__large {
+  font-size: 2rem;
+  font-weight: bold;
+  color: DARK_BLUE;
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.card__base {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.action_area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.user__fullname {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0.85rem 0 0.2rem 0;
+}
+
+.user__email {
+  margin: 0 0 0.5rem 0;
+  padding: 0 1rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.admin__pill {
+  color: WHITE;
+  background-color: BASE_BLUE;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin: 0.6rem;
+  padding: 5px 12px;
+  border-radius: 24px;
+  line-height: 1;
+  box-shadow: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media (max-width: 1024px) {
+  .user__fullname {
+    margin: 0.8rem 0 0.2rem 0;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 960px) {
+  .user__fullname {
+    margin: 0.5rem 0 0.2rem 0;
+  }
+
+  .image {
+    width: 85px;
+    height: 85px;
+  }
+
+  .user__email {
+    margin: 0 0 0.5rem 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .balance__noHover {
+    margin: 0;
+  }
+
+  .balance__text {
+    text-align: center;
+  }
+
+  .balance__value__large {
+    text-align: center;
+  }
+}
+
+@media (max-width: 538px) {
+  .user__fullname {
+    font-size: 14px;
+    margin: 0.5rem 0 0.1rem 0;
+  }
+
+  .balance__value {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .admin__pill {
+    font-size: 0.6rem;
+    margin: 0.5rem;
+  }
+
+  .user__email {
+    margin: 0 0 0.4rem 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .user__fullname {
+    font-size: 16px;
+    margin: 0.6rem 0 0.1rem 0;
+  }
+
+  .balance__value {
+    font-size: 22px;
+  }
+
+  .image {
+    width: 75px;
+    height: 75px;
+  }
+
+  .user__email {
+    margin: 0 0 0.6rem 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .user__fullname {
+    margin: 0.4rem 0 0.1rem 0;
+  }
+
+  .balance__value {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  .user__fullname {
+    font-size: 12px;
+    margin: 0.5rem 0 0.1rem 0;
+  }
+
+  .balance__value {
+    font-size: 18px;
+  }
+
+  .image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .user__email {
+    margin: 0 0 0.4rem 0;
+  }
+}

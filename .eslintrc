@@ -1,0 +1,94 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+            "plugins": ["react"],
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "legacyDecorators": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "semi": [1, "always"],
+    "semi-spacing": [
+      1,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "indent": [1, 2],
+    "comma-dangle": ["error", "never"],
+    "quotes": [1, "single", { "avoidEscape": true }],
+    "arrow-spacing": [1, { "before": true, "after": true }],
+    "sort-imports": [
+      1,
+      {
+        "ignoreCase": false,
+        "ignoreDeclarationSort": false,
+        "ignoreMemberSort": false,
+        "memberSyntaxSortOrder": ["none", "all", "multiple", "single"],
+        "allowSeparatedGroups": true
+      }
+    ],
+    "no-constant-condition": 0,
+    "brace-style": [1, "1tbs"],
+    "prefer-template": [1],
+    "prefer-destructuring": [1, { "object": true, "array": false }],
+    "jsx-quotes": [1, "prefer-single"],
+    "react/prop-types": 0,
+    "react/jsx-pascal-case": 1,
+    "react/jsx-first-prop-new-line": 0,
+    "react/jsx-handler-names": 0,
+    "react/jsx-curly-spacing": 0,
+    "react/jsx-max-props-per-line": 0,
+    "react/jsx-equals-spacing": [1, "never"],
+    "react/jsx-closing-tag-location": 1,
+    "react/require-default-props": 1,
+    "react/forbid-dom-props": 0,
+    "react/display-name": 0,
+    "react/jsx-sort-props": [
+      1,
+      {
+        "callbacksLast": true,
+        "shorthandFirst": true,
+        "reservedFirst": true,
+        "noSortAlphabetically": true
+      }
+    ],
+    "react/jsx-wrap-multilines": [
+      1,
+      {
+        "declaration": "parens-new-line",
+        "assignment": "parens-new-line",
+        "return": "parens-new-line",
+        "arrow": "parens-new-line",
+        "condition": "parens-new-line",
+        "logical": "ignore",
+        "prop": "parens-new-line"
+      }
+    ]
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "location": true,
+    "localStorage": true
+  }
+}

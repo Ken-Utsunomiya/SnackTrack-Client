@@ -1,0 +1,259 @@
+@value colors: './Colors.module.css';
+@value LIGHT_GREY, INNER_LIGHT_GREY, MID_GREY, DARK_GREY, LIGHT_BLUE, BASE_BLUE, LIGHT_BLUE_HOVER, DARK_BLUE from colors;
+
+.card {
+  min-width: 260px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__small {
+  max-width: 300px;
+}
+
+.header {
+  margin: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__sub {
+  font-size: 16px;
+  margin: 0;
+}
+
+.header_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerTitle {
+  font-size: 18px;
+  align-self: flex-start;
+  margin: 0.2rem 0 0 0;
+  line-height: 22px;
+  margin-right: 1rem;
+  text-overflow: ellipsis;
+  color: BASE_BLUE;
+}
+
+.categoryName {
+  margin: 0;
+  font-weight: 500;
+}
+
+.headerPrice {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  color: DARK_BLUE;
+}
+
+.body {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.image {
+  max-width: 250px;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.description {
+  font-size: 0.875rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  text-overflow: ellipsis;
+}
+
+.quant__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantity {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.labelContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: DARK_GREY;
+}
+
+.snackTitle {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: DARK_BLUE;
+}
+
+.stepper {
+  display: flex;
+}
+
+.stepper__button {
+  width: 50px;
+  height: 40px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: BASE_BLUE;
+  background-color: LIGHT_BLUE;
+  text-transform: none;
+  border-radius: 6px;
+}
+
+.stepper .stepper__button:hover {
+  background-color: LIGHT_BLUE_HOVER;
+}
+
+.stepper .stepper__button:focus {
+  background-color: LIGHT_BLUE_HOVER;
+}
+
+.stepper .stepper__button:disabled {
+  color: MID_GREY;
+  background-color: LIGHT_GREY;
+}
+
+.stepper__button__left {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.stepper__button__right {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.input {
+  color: DARK_GREY;
+  font-size: 1rem;
+  border: 2px solid LIGHT_BLUE;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  padding: 0.25rem 0rem;
+  margin: 0;
+}
+
+.input__stepper {
+  border-left: none;
+  border-right: none;
+  border-radius: 0;
+}
+
+.input > * {
+  text-align: center;
+}
+
+.input__small {
+  height: 40px;
+  width: 70px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.button {
+  width: 80px;
+  height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: BASE_BLUE;
+  text-transform: none;
+  margin: 0.75rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.button:hover {
+  background-color: DARK_BLUE;
+}
+
+.button:disabled {
+  color: MID_GREY;
+  background-color: LIGHT_GREY;
+}
+
+.button__light {
+  width: 80px;
+  height: 40px;
+  font-weight: 700;
+  color: BASE_BLUE;
+  background-color: LIGHT_BLUE;
+  text-transform: none;
+  margin: 0.75rem;
+  margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.button__wide {
+  width: 110px;
+}
+
+.button__light:hover {
+  background-color: LIGHT_BLUE_HOVER;
+}
+
+.button__light:disabled {
+  color: MID_GREY;
+  background-color: LIGHT_GREY;
+}
+
+@media (max-width: 500px) {
+  .card {
+    overflow-y: auto;
+  }
+}
+
+.oneButton__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem;
+}
+
+.twoButton__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem;
+}
+
+.text__title {
+  margin: 0;
+}
+
+.text__body {
+  font-size: 1rem;
+  margin: 0 1rem 1rem 1rem;
+}
+
+.text__emp {
+  color: BASE_BLUE;
+  font-weight: 600;
+}
