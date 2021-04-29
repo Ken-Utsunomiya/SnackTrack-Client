@@ -1,3 +1,61 @@
+# SnackTrack
+
+会社内のスナックの情報や在庫、各社員の支払い状況、各社員のバランスをわかりやすく管理するWebアプリケーション。
+
+## 開発概要
+- 8人によるチーム開発 (バックエンドx4, フロントエンドx3, PMx1)
+- 4ヶ月の製作期間 (コーディング、ドキュメント作成含め）
+- Agile + Waterfall
+
+## 工夫した点
+- Google OAuth 2.0を使用したユーザー認証機能
+- CI/CD パイプラインの導入による自動ビルド＋デプロイ
+- レスポンシブなデザイン設計 (Mobile, iPad, ラップトップ, etc)
+- データベースの原子性への対応
+- モックを使った高速なテスト
+
+
+-----------------------------------------------
+#### スナック購入ページ
+<img width="1311" alt="Screen Shot 2021-04-23 at 11 10 50 PM" src="https://user-images.githubusercontent.com/81115999/116485058-332e2400-a83f-11eb-8441-c10c2cffc020.png">
+
+#### 支払い状況管理ページ
+<img width="1269" alt="Screen Shot 2021-04-23 at 11 12 50 PM" src="https://user-images.githubusercontent.com/81115999/116486282-16472000-a842-11eb-9741-87d9545d3d73.png">
+
+#### スナック管理ページ (Overview)
+<img width="1272" alt="Screen Shot 2021-04-23 at 11 13 47 PM" src="https://user-images.githubusercontent.com/81115999/116486290-1ba46a80-a842-11eb-879f-7cf6cbff078f.png">
+
+#### スナック管理ページ (在庫管理ページ）
+<img width="1281" alt="Screen Shot 2021-04-23 at 11 14 17 PM" src="https://user-images.githubusercontent.com/81115999/116486295-1e06c480-a842-11eb-9fc9-a922890912eb.png">
+
+-----------------------------------------------
+
+## 機能一覧
+### Employee module
+- ワンクリックでのスナック購入
+- カテゴリー、スナック名での高速な検索、フィルターリング
+- 自身のバランス、支払い状況の確認、編集
+- 導入してほしいスナックの要請
+- 共有のiPadからの注文とその確認、編集
+
+### Admin Module
+- 新しいスナックの追加
+- 既存のスナックの管理
+- 各スナックの在庫の編集
+- 期間ごとのスナック人気ランキングの確認
+- 各社員のバランス、支払い状況の管理
+- ユーザー情報の管理
+
+## 仕様技術、ツール
+| | |
+| ---- | ---- |
+|  フロントエンド  |  React.js  |
+|  バックエンド  |  Node.js, Express  |
+|  データベース  |  Posgresql  |
+
+---------------------------------------------------
+
+## 開発手順
 ### :card_index_dividers:&nbsp;&nbsp;Project Architecture
 
 #### Overview
