@@ -19,12 +19,15 @@
 #### スナック購入ページ
 <img width="1311" alt="Screen Shot 2021-04-23 at 11 10 50 PM" src="https://user-images.githubusercontent.com/81115999/116485058-332e2400-a83f-11eb-8441-c10c2cffc020.png">
 
+-----------------------------------------------
 #### 支払い状況管理ページ
 <img width="1269" alt="Screen Shot 2021-04-23 at 11 12 50 PM" src="https://user-images.githubusercontent.com/81115999/116486282-16472000-a842-11eb-9741-87d9545d3d73.png">
 
+-----------------------------------------------
 #### スナック管理ページ (Overview)
 <img width="1272" alt="Screen Shot 2021-04-23 at 11 13 47 PM" src="https://user-images.githubusercontent.com/81115999/116486290-1ba46a80-a842-11eb-879f-7cf6cbff078f.png">
 
+-----------------------------------------------
 #### スナック管理ページ (在庫管理ページ）
 <img width="1281" alt="Screen Shot 2021-04-23 at 11 14 17 PM" src="https://user-images.githubusercontent.com/81115999/116486295-1e06c480-a842-11eb-9fc9-a922890912eb.png">
 
