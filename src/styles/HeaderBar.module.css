@@ -70,12 +70,12 @@
 }
 
 .icon__container:hover {
-  opacity: 100%;
+  opacity: 1;
   fill: BASE_RED;
 }
 
 .icon__base {
-  opacity: 80%;
+  opacity: 0.8;
   transition: 0.2s;
 }
 
@@ -87,7 +87,7 @@
 
 .icon__active {
   font-weight: bold;
-  opacity: 100%;
+  opacity: 1;
   fill: BASE_RED;
 }
 
@@ -166,12 +166,12 @@
   padding-left: 3rem;
   padding-right: 3rem;
   border: 0;
-  opacity: 50%;
+  opacity: 0.5;
   transition: 0.1s;
 }
 
 .button_logout:hover {
-  opacity: 100%;
+  opacity: 1;
 }
 
 .unselectable {
