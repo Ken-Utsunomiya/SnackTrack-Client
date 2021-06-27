@@ -2,6 +2,9 @@
 
 会社内のスナックの情報や在庫、各社員の支払い状況、各社員のバランスをわかりやすく管理するWebアプリケーション。
 
+アプリURL : https://snacktrack.netlify.app
+バックエンド Github URL : https://github.com/Ken-Utsunomiya/SnackTrack-Server
+
 ## 開発概要
 - 8人によるチーム開発 (バックエンドx4, フロントエンドx3, PMx1)
 - 4ヶ月の製作期間 (コーディング、ドキュメント作成含め）
