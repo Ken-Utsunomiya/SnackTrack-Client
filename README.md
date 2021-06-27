@@ -4,6 +4,8 @@
 
 アプリURL : https://snacktrack.netlify.app
 
+アプリURL (共有iPad用) : https://snacktrack.netlify.app/common
+
 バックエンド Github URL : https://github.com/Ken-Utsunomiya/SnackTrack-Server
 
 ## 開発概要
