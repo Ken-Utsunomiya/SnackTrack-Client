@@ -110,7 +110,7 @@ At the end of every sprint (tentatively), we'll do a code freeze and merge the `
 #### Branches
 | Branch | Description |
 |--------|-------------|
-| `master` | anything & everything |
+| `main` | anything & everything |
 | `dev` | experimental development branch |
 | `TICKET-NUMBER` | feature, user story, bugs, fixes (e.g. `SNAK-101`) |
 
